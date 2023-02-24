@@ -11,6 +11,14 @@ import java.io.RandomAccessFile;
 
 import javax.swing.*;
 
+/**
+ * 
+ * Metodo llamado ventanadepart
+ *
+ */
+
+
+
 public class VentanaDepart extends JFrame implements ActionListener  {
 	
 private static final String NOEXISTEDEPART = "DEPARTAMENTO NO EXISTE.";
@@ -38,6 +46,13 @@ Color c; //para poner colores
  // WHITE,LIGHTGRAY,GRAY,DARKGRAY,BLUE,BLACK,RED,MAGENTA,PINK,ORANGE,CYAN,GREEN,YELLOW
 private String existedepart;
 private String depar_error;
+
+
+/**
+ * 
+ * Metodo llamado ventanadepart
+ */
+
 
 public VentanaDepart(JFrame f )
 { 	
@@ -80,6 +95,12 @@ public VentanaDepart(JFrame f )
 	ver.addActionListener(this);
 }
 
+/**
+ * 
+ * Método llamado metodo cinco
+ */
+
+
 private JPanel metodoCinco() {
 	JPanel p4 = new JPanel();
 	p4.setLayout (new FlowLayout());
@@ -89,6 +110,11 @@ private JPanel metodoCinco() {
 	return p4;
 }
 
+/**
+ * 
+ * Metodo llamado metodo cuatro
+ */
+
 private JPanel metodoCuatro() {
 	JPanel p3 = new JPanel();
 	p3.setLayout (new FlowLayout());
@@ -96,6 +122,11 @@ private JPanel metodoCuatro() {
 	p3.add(loc);
 	return p3;
 }
+
+/**
+ * 
+ * Metodo llamado metodo tres
+ */
 
 private JPanel metodoTres() {
 	JPanel p2 = new JPanel();
@@ -105,6 +136,13 @@ private JPanel metodoTres() {
 	return p2;
 }
 
+
+/**
+ * 
+ * Metodo llamado metodo dos
+ */
+
+
 private JPanel metodoDos() {
 	JPanel p1 = new JPanel();
 	p1.setLayout (new FlowLayout());
@@ -113,6 +151,11 @@ private JPanel metodoDos() {
 	return p1;
 }
 
+/**
+ * 
+ * Metodo llamado metodo uno
+ */
+
 private JPanel metodoUno() {
 	JPanel p0 = new JPanel();
 	c = Color.CYAN;
@@ -120,6 +163,11 @@ private JPanel metodoUno() {
 	p0.setBackground(c);
 	return p0;
 }
+
+/**
+ * Metodo llamado actionPermormed
+ */
+
 
 public void actionPerformed(ActionEvent e) 
 {   int dep, confirm;
@@ -153,6 +201,11 @@ public void actionPerformed(ActionEvent e)
 	}
 }
 
+/**
+ * 
+ * Metodo llamado modifdepart
+ */
+
 private void modifdepart(ActionEvent e) {
 	int dep;
 	int confirm;
@@ -184,6 +237,12 @@ private void modifdepart(ActionEvent e) {
 	    	   {mensaje.setText(" ERRORRR EN EL FICHERO. Fichero no existe. (MODIFICAR)");} 
 	    }
 }
+
+/**
+ * 
+ * Metodo llamado borrardepart
+ */
+
 
 private void borradepart(ActionEvent e) {
 	int dep;
@@ -219,6 +278,13 @@ private void borradepart(ActionEvent e) {
 	    }
 }
 
+
+/**
+ * 
+ * Metodo llamado consultdepart
+ */
+
+
 private void consuldepart(ActionEvent e) {
 	int dep;
 	if (e.getSource() == consu) { //SE PULSA EL BOTON  consultar  	
@@ -242,6 +308,11 @@ private void consuldepart(ActionEvent e) {
 	      
 	    }
 }
+
+/**
+ * 
+ * Metodo llamado altadepart
+ */
 
 private void altadepart(ActionEvent e) {
 	int dep;
@@ -269,6 +340,11 @@ private void altadepart(ActionEvent e) {
 	    		 } 
 	    }
 }
+
+/**
+ * 
+ * Metodo llamado verporconsola
+ */
 
 public  void verporconsola() throws IOException {     
   String  nom="",loc=""; int dep=0; long pos;
