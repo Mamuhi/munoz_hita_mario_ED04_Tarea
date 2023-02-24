@@ -7,6 +7,12 @@ import javax.swing.JFrame;
 
 public class FicheroAleatorioVentana {
 
+	/**
+	 * 
+	 * Metodo principal (main)
+	 * 
+	 */
+	
 	public static void main(String[] args) throws IOException {
 		
 		JFrame f = new JFrame("DEPARTAMENTOS.");

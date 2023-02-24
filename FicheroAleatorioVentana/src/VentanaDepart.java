@@ -142,7 +142,6 @@ private JPanel metodoTres() {
  * Metodo llamado metodo dos
  */
 
-
 private JPanel metodoDos() {
 	JPanel p1 = new JPanel();
 	p1.setLayout (new FlowLayout());
